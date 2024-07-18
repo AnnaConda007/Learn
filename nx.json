@@ -53,7 +53,26 @@
       "linter": "eslint",
       "style": "less",
       "unitTestRunner": "jest"
+    },
+    "@nx/angular:component": {
+      "style": "css"
     }
   },
-  "nxCloudAccessToken": "MjdiMzM5ZTQtY2IwNC00NzIwLTg4MzctZDc2MjJkYzA4ZTQ1fHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "MjdiMzM5ZTQtY2IwNC00NzIwLTg4MzctZDc2MjJkYzA4ZTQ1fHJlYWQtd3JpdGU=",
+  "plugins": [
+    {
+      "plugin": "@nx/webpack/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview"
+      }
+    },
+    {
+      "plugin": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "eslint:lint"
+      }
+    }
+  ]
 }
